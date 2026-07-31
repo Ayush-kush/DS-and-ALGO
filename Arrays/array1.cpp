@@ -87,41 +87,41 @@ using namespace std;
 // Best O(N)
 
 // int main(int argc, char const *argv[])
-{
-    int t;
-    cin>>t;
+// {
+//     int t;
+//     cin>>t;
     
-    while (t--)
-    {
-        int n;
-        cin>>n;
-        int arr[n];
+//     while (t--)
+//     {
+//         int n;
+//         cin>>n;
+//         int arr[n];
         
-        for (int i = 0; i < n; i++)
-        {
-            cin>>arr[i];
+//         for (int i = 0; i < n; i++)
+//         {
+//             cin>>arr[i];
             
-        }
+//         }
 
-    int largest=arr[0];
-    int secondlargest = INT_MIN;
+//     int largest=arr[0];
+//     int secondlargest = INT_MIN;
 
-    for (int i = 1; i < n; i++)
-    {
-        if(arr[i]>largest){
-            secondlargest = largest;
-            largest = arr[i];
-        }
-        else if (arr[i]<largest && secondlargest<arr[i])
-        {
-            secondlargest=arr[i];
-        }
+//     for (int i = 1; i < n; i++)
+//     {
+//         if(arr[i]>largest){
+//             secondlargest = largest;
+//             largest = arr[i];
+//         }
+//         else if (arr[i]<largest && secondlargest<arr[i])
+//         {
+//             secondlargest=arr[i];
+//         }
         
-    }
-    cout<<secondlargest;
-    }
-    return 0;
-}
+//     }
+//     cout<<secondlargest;
+//     }
+//     return 0;
+// }
 
 // Another Solution found on my own
 // int main(){
@@ -169,13 +169,13 @@ using namespace std;
 
 // Q2. Check if array is sorted
 
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
-int main(int argc, char const *argv[])
-{
-    int t;
-    cin>>t;
+// int main(int argc, char const *argv[])
+// {
+//     int t;
+//     cin>>t;
     
     // while (t--)
     // {
@@ -200,35 +200,35 @@ int main(int argc, char const *argv[])
     
     //2. Better
 
-    while (t--)
-    {
-        int n;
-        cin>>n;
-        int arr[n];
+//     while (t--)
+//     {
+//         int n;
+//         cin>>n;
+//         int arr[n];
         
         
-         for (int i = 0; i < n; i++)
-         {
-             cin>>arr[i];
-         }
+//          for (int i = 0; i < n; i++)
+//          {
+//              cin>>arr[i];
+//          }
 
-         int index = 0;
+//          int index = 0;
          
-         for (int i = 1; i < n; i++)
-         {
-                if(arr[i]>arr[index]){
-                    index+=1;
-                    arr[index]=arr[i];
-                }
-         }
+//          for (int i = 1; i < n; i++)
+//          {
+//                 if(arr[i]>arr[index]){
+//                     index+=1;
+//                     arr[index]=arr[i];
+//                 }
+//          }
 
-        for (int i = 0; i <= index; i++)
-         {
-             cout<<arr[i];
-         }
+//         for (int i = 0; i <= index; i++)
+//          {
+//              cout<<arr[i];
+//          }
          
-    }
+//     }
 
-    return 0;
+//     return 0;
 
-}
+// }
